@@ -5,7 +5,7 @@
       在嵌入vite子应用时，micro-app的功能只负责渲染，其它的行为由应用自行决定，这包括如何防止样式、JS变量、元素的冲突。
     </span>
     <nav>
-      <router-link to="/">首页</router-link> |
+      <router-link to="/:page*">首页</router-link> |
       <router-link to="/about">关于我们</router-link> |
       <router-link to="/contact">联系我们</router-link>
     </nav>

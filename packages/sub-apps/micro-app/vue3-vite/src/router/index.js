@@ -5,7 +5,7 @@ import Contact from '@/views/Contact.vue';
 
 const routes = [
   {
-    path: '/',
+    path: '/:page*',
     name: 'Home',
     component: Home
   },
@@ -22,7 +22,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/#/micro/vue3-vite'),
+  history: createWebHistory('/#/micro/vue3-vite/'),
   routes
 });
 
