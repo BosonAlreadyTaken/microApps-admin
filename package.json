@@ -1,0 +1,30 @@
+{
+  "name": "admin-micro",
+  "version": "0.0.1",
+  "description": "admin-micro",
+  "main": "index.js",
+  "scripts": {
+    "micro-app:dev": "pnpm -F @micro-app/* run dev",
+    "qiankun:dev": "pnpm -F @qiankun/* run dev",
+    "wujie:dev": "pnpm -F @wujie/* run dev",
+    "linux:clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "win:clean:node_modules": "FOR /d /r . %d in (node_modules) DO @IF EXIST %d rmdir /s /q %d",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BosonAlreadyTaken/microApps-admin.git"
+  },
+  "author": "boson-admin-micro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BosonAlreadyTaken/microApps-admin/issues"
+  },
+  "homepage": "https://github.com/BosonAlreadyTaken/microApps-admin#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@esbuild-kit/cjs-loader": "^2.4.1",
+    "husky": "^8.0.3"
+  }
+}
